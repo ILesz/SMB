@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Widget.ShoppingList.AppWidget.Container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.ShoppingList.AppWidgetContainer">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="216dp"
+        android:layout_height="230dp"
+        android:layout_margin="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_toRightOf="@id/imageView">
+
+        <Button
+            android:id="@+id/buttonChangeImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Zmień obraz" />
+
+        <Button
+            android:id="@+id/buttonOpenBrowser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Otwórz pja.edu.pl" />
+
+        <Button
+            android:id="@+id/buttonMakeToast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="zrób tosta" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/songName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView" />
+
+    <LinearLayout
+        android:id="@+id/musicPlayer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_below="@id/songName">
+
+        <Button
+            android:id="@+id/buttonStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="odtwórz" />
+
+        <Button
+            android:id="@+id/buttonPause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="pauza" />
+
+        <Button
+            android:id="@+id/buttonStop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="stop" />
+
+        <Button
+            android:id="@+id/buttonNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="następny" />
+    </LinearLayout>
+    <ListView
+        android:id="@+id/shopsList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/musicPlayer" />
+    <TextView
+        android:id="@+id/emptyList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

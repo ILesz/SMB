@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">ShoppingList</string>
+    <string name="mapbox_access_token" translatable="false" tools:ignore="UnusedResources">
+        pk.eyJ1IjoiaWxlc3oiLCJhIjoiY2xxOW5mN21vMW44NTJxa3ppYWl6NGY3eCJ9.uR5FhxyomjlPZ5H9gA-q8g
+    </string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="app_widget_description">This is an app widget description</string>
+</resources>
